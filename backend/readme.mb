@@ -1,0 +1,25 @@
+## Documentaçao
+
+APIs
+
+GET - /user
+ Retorna todos os usuários
+ Retorno:
+  Array de usuários
+    name: string,
+    age: string,
+    email: string,
+    password: string
+
+POST - /session
+  Cria uma sessão
+  Enviar:
+    email: string,
+    password: string,
+  Retorno:
+    Caso de usuário encontrado: 
+      status: 201,
+      message: 'Logged In'
+    Caso de usuário não encontrado:
+      status: 401,
+      message: 'User not Found'
